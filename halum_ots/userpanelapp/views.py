@@ -22,13 +22,8 @@ def login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(request,username=username,password=password)
-        # print(useremail, password)
         if user is not None:
-            # login(request,user)
-            # url = "/home/?username={}".format(username)
             request.session['username']=request.POST['username']
-
-            # return HttpResponseRedirect(url)
             return redirect(home)
         else:
             return HttpResponse("Couldn't login")
@@ -38,7 +33,6 @@ def login(request):
 
 def home(request):
     if request.method == 'GET':
-        # username = request.GET.get('username')
         if 'username' in request.session:
             username = request.session['username']
             user = User.objects.filter(username=username).first()

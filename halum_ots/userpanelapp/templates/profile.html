@@ -4,7 +4,7 @@
         {% load static %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Dental Hospital Website Template | Smarteyeapps.com</title>
+        <title>profile</title>
         <link rel="shortcut icon" href="{% static 'assets/profile_css/images/fav.png' %}" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="{% static 'assets/profile_css/images/fav.jpg' %}">
@@ -14,326 +14,603 @@
     </head>
         <header class="head">
             <div class="logo border-bottom">
-                <img class="w-100" src="{% static 'assets/images/logo.jpg' %}" alt="" />
+                <!-- <img class="w-100" src="{% static 'assets/images/logo.jpg' %}" alt="" /> -->
+                <p>HALUM OTS</p>
                  <a class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </a>
             </div>
             <div id="navbarNav" class="navcol d-none d-lg-block">
                 <ul>
-                    <li><a href="#"><i class="bi bi-house-door fs-5 me-2"></i> Home</a></li>
+                    <li><a href="{% url 'home' %}"><i class="bi bi-house-door fs-5 me-2"></i> Home</a></li>
                     <li><a href="#about"><i class="bi fs-5 bi-info-square me-2"></i> About</a></li>
-                    <li><a href="#service"><i class="bi fs-5 bi-gear me-2"></i> Service</a></li>
-                    <li><a href="#portfolio"><i class="bi fs-5 bi-columns-gap me-2"></i> Portfolio</a></li>
-                    <li><a href="#testimonial"><i class="bi fs-5 bi-people me-2"></i> Testimonil</a></li>
-                    <li><a href="#blog"><i class="bi fs-5 bi-newspaper me-2"></i> Blog</a></li>
+                    <li><a href="#Packages"><i class="bi fs-5 bi-newspaper me-2"></i> Packages</a></li>
+                    <li><a href="#Airlines"><i class="bi fs-5 bi-gear me-2"></i> Airlines </a></li>
+                    <li><a href="#Train"><i class="bi fs-5 bi-columns-gap me-2"></i> Train </a></li>
+                    <li><a href="#Bus"><i class="bi fs-5 bi-people me-2"></i> Bus </a></li>
+                    <li><a href="#Hotel"><i class="bi fs-5 bi-newspaper me-2"></i> Hotel</a></li>
                     <li><a href="#contact"><i class="bifs-5  bi-envelope me-2"></i> Contact</a></li>
                 </ul>
             </div>
         </header>
         <div  class="main-content">
-           
-            <!--########################## Profile Starts Here ############################# -->
-            
-            <div class="profile-head">
-               <div class="row vh-100">
-                   <div class="col-xl-6 text-center mx-auto align-self-center ">
-                        <div class="imgcover mb-4">
-                            <img src="{% static 'assets/profile_css/images/square.jpg' %}" class="rounded-pill bg-white p-2 shadow" alt="">
-                        </div>
-                        <b class="fs-6">Hellow I am, {{username}}</b>
-                        <h1 class="fw-bold mb-4 fs-1">Full Stack Develper</h1>
-                        <p>Mauris cursus libero eu gravida malesuada. Vivamus efficitur sollicitudin tincidunt. Vivamus iaculis, est et posuere facilisis, sem nisi volutpat enim, eget hendrerit libero ligula quis lacus</p>
-                        <ul>
-                            <li></li>
-                        </ul>
-                        <button class="btn btn-outline-primary fw-bolder fs-7 px-4 py-2 mt-3 rounded-pill">Download Resume</button>
-                    </div>
-               </div>
-            </div>
-            
             <!--########################## About Us Starts Here ############################# -->
             
             <div id="about" class="about px-4 bg-white py-5">
-                <div class="titie-row row mb-3">
-                    <h2 class="fw-bolder">About Me</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="fw-bolder">Profile Information</h2>
+                            <div class="card">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <div class="text-section">
+                                        <h5 class="card-title">{{username}}</h5>
+                                        <p class="card-text">Name: <b>{{username}}</b></p>
+                                        <p class="card-text">Email: <b>{{email}}</b></p>
+                                        <p class="card-text">Phone: <b>{{phone}}</b></p>
+                                        <p class="card-text">Address: <b>{{address}}</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail rounded-circle" style="height: 300px; width: 300px;" alt="{{username}}">
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-7">
-                        <p><b>I am, Eiden Jackeson</b></p>
-                        <p class="pt-2 fs-6 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum id tempor libero. Praesent vel magna eget purus dignissim interdum. Sed efficitur malesuada dui, ac interdum ante scelerisque non. Curabitur quis euismod lorem, vel rutrum ante. Sed non vestibulum turpis. Phasellus sit amet nisl in diam congue tristique. Nullam convallis lectus ac nisl iaculis, non posuere ipsum interdum. Vivamus nec justo ac sapien convallis maximus.</p>
-                        
-                        <h4 class=" fs-5 my-3 mt-4 fw-bolder">What is my skill level ?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.</p>
-                        
-                        <div class="row skill-set">
-                            <div class="col-md-6 py-3">
-                               <h6 class="fw-bold">React.Js</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                                </div>
-                            </div>
-                             <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Vue.Js</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 65%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Angular.Js</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                                </div>
-                            </div>
-                            
-                             <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Laravel</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Django</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Next Js</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">66%</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Phoptoshop</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">82%</div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-6 py-3">
-                                <h6 class="fw-bold">Sketch</h6>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" aria-label="Example with label" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+            </div>
+            
+            <!--########################## package Starts Here ############################# -->
+            
+            <div id="packages" class="service px-4 py-5">
+                 <div class="titie-row row mb-3">
+                    <h2 class="fw-bolder">Packages</h2>
+                    <p>Your Packages information available here.</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" alt="">
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <!--########################## Services Starts Here ############################# -->
+             <!--########################## Airlines Starts Here ############################# -->
             
-            <div id="service" class="service px-4 py-5">
-                 <div class="titie-row row mb-3">
-                    <h2 class="fw-bolder">Services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.</p>
+            <div id="Airlines" class="service px-4 bg-white py-5">
+                <div class="titie-row row mb-3">
+                    <h2 class="fw-bolder">Airlines</h2>
+                    <p>Your Airlines information available here.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">Website Design</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">UI/UX Development</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">Web Development</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">Android Development</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">IOS Developement</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
-                    </div>
-                    
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white text-center p-4">
-                            <i class="bi fs-1 bi-boxes"></i>
-                            <h5 class="mt-3 fs-6 fw-bold">Digital Marketing</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar magna ut bibendum imperdiet</p>
-                       </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-             <!--########################## Portfolio Starts Here ############################# -->
-            
-            <div id="portfolio" class="service px-4 bg-white py-5">
-                 <div class="titie-row row mb-3">
-                    <h2 class="fw-bolder">Portfolio</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.</p>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/1.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/2.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/3.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/4.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/5.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/6.jpg' %}" alt="">
-                            <h5 class="mt-3 fs-6 fw-bold">Creative Page Design</h5>
-                       </div>
-                    </div>
-                </div>
-            </div>
-            
-             <!--########################## Portfolio Starts Here ############################# -->
+             <!--########################## Train Starts Here ############################# -->
              
-             <div id="testimonial" class="service px-4 py-5">
-                 <div class="titie-row row mb-3">
-                    <h2 class="fw-bolder">Testimonial</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.</p>
+             <div id="Train" class="service px-4 py-5">
+                <div class="titie-row row mb-3">
+                    <h2 class="fw-bolder">Train</h2>
+                    <p>Your Train information available here.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-3">
-                            <div class="prf row mb-3">
-                                <div class="col-md-3">
-                                    <img class="rounded-pill" src="{% static 'assets/profile_css/images/testimonial/member-01.jpg' %}" alt="">
-                                </div>
-                                <div class="col-md-9 align-self-center">
-                                    <h6 class="mb-0 fw-bolder">Vinoth Parkash</h6>
-                                    <span>CEO Fabric Nation</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="det text-center">
-                                <p class="fs-7 fst-italic">Sed lectus ante, pharetra in lacus sed, efficitur luctus elit. Suspendisse commodo felis dictum, tempor tortor a, dapibus tellus. Nam ornare felis ut arcu tristique luctus. Curabitur </p>
-                            </div>
-                       </div>
+                        </div>
                     </div>
                     
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-3">
-                            <div class="prf row mb-3">
-                                <div class="col-md-3">
-                                    <img class="rounded-pill" src="{% static 'assets/profile_css/images/testimonial/member-03.jpg' %}" alt="">
-                                </div>
-                                <div class="col-md-9 align-self-center">
-                                    <h6 class="mb-0 fw-bolder">Jackson Daniel</h6>
-                                    <span>CEO Notitech</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="det text-center">
-                                <p class="fs-7 fst-italic">Sed lectus ante, pharetra in lacus sed, efficitur luctus elit. Suspendisse commodo felis dictum, tempor tortor a, dapibus tellus. Nam ornare felis ut arcu tristique luctus. Curabitur </p>
-                            </div>
-                       </div>
+                        </div>
                     </div>
                     
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove shadow-md rounded bg-white p-3">
-                            <div class="prf row mb-3">
-                                <div class="col-md-3">
-                                    <img class="rounded-pill" src="{% static 'assets/profile_css/images/testimonial/member-02.jpg' %}" alt="">
-                                </div>
-                                <div class="col-md-9 align-self-center">
-                                    <h6 class="mb-0 fw-bolder">Praveen Thaney</h6>
-                                    <span>Admin Vintech</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="det text-center">
-                                <p class="fs-7 fst-italic">Sed lectus ante, pharetra in lacus sed, efficitur luctus elit. Suspendisse commodo felis dictum, tempor tortor a, dapibus tellus. Nam ornare felis ut arcu tristique luctus. Curabitur </p>
-                            </div>
-                       </div>
+                        </div>
                     </div>
-                     
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-             <!--########################## Blog Starts Here ############################# -->
+             <!--########################## Bus Starts Here ############################# -->
             
-            <div id="blog" class="service px-4 bg-white py-5">
-                 <div class="titie-row row mb-3">
-                    <h2 class="fw-bolder">Blog</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.</p>
+            <div id="Bus" class="service px-4 bg-white py-5">
+                <div class="titie-row row mb-3">
+                    <h2 class="fw-bolder">Bus</h2>
+                    <p>Your Bus information available here.</p>
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/1.jpg' %}" alt="">
-                            <div class="p-2">
-                                <h5 class="mt-3 fs-7 fw-bold">Top 10 Trends in  Webdesign sit nibh amet  Mauris ipsum sit nibh</h5>
-                                <span class="fs-8">22 May 2015</span>
-                                <span class="float-end fs-8"><i class="bi bi-person"></i> Sam Anderson</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
                             </div>
-                       </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/2.jpg' %}" alt="">
-                            <div class="p-2">
-                                <h5 class="mt-3 fs-7 fw-bold">Top 10 Trends in  Webdesign sit nibh amet  Mauris ipsum sit nibh</h5>
-                                <span class="fs-8">22 May 2015</span>
-                                <span class="float-end fs-8"><i class="bi bi-person"></i> Sam Anderson</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
                             </div>
-                       </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!--########################## Hotel Us Starts Here ############################# -->
+
+            <div id="Hotel" class="service px-4 bg-white py-5">
+                <div class="titie-row row mb-3">
+                    <h2 class="fw-bolder">Hotel</h2>
+                    <p>Your Hotel information available here.</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                       <div class="serv-cove rounded bg-white p-2">
-                            <img src="{% static 'assets/profile_css/images/blog/3.jpg' %}" alt="">
-                            <div class="p-2">
-                                <h5 class="mt-3 fs-7 fw-bold">Top 10 Trends in  Webdesign sit nibh amet  Mauris ipsum sit nibh</h5>
-                                <span class="fs-8">22 May 2015</span>
-                                <span class="float-end fs-8"><i class="bi bi-person"></i> Sam Anderson</span>
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
-                     
+                    
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="d-flex align-items-center h-100">
+                            <div class="serv-cove shadow-md rounded bg-white text-center p-4 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="serv-thumbnail">
+                                        <img src="{% static 'assets/profile_css/images/profile.jpg' %}" class="img-thumbnail"style="height: 300px; width: 300px;" alt="{{username}}">
+                                    </div>
+                                    <div class="serv-info ms-4">
+                                        <i class="bi fs-1 bi-boxes"></i>
+                                        <h5 class="mt-3 fs-6 fw-bold">Demo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quod.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -418,6 +695,7 @@
                     </div>
                 </div>
             </div>
+            
             
             
             
